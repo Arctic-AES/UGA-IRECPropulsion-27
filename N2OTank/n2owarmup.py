@@ -44,7 +44,7 @@ def C_per_m(T, dT=0.05):
     return m_N2O * (u_N2O(T + dT) - u_N2O(T - dT)) / (2 * dT) + m_Al * c_Al
 
 # (283.15 K -> 288 K)
-C_closed_form = m_N2O * (u_N2O(T_goal) - u_N2O(T0)) / (T_goal - T0) + m_Al * c_A
+C_closed_form = m_N2O * (u_N2O(T_goal) - u_N2O(T0)) / (T_goal - T0) + m_Al * c_Al
 
 T_full = brentq(lambda T: CP.PropsSI("D", "T", T, "Q", 0, N2O) - rho_bar, T0, 309.0)
 
