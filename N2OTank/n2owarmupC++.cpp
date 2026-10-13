@@ -1,4 +1,5 @@
-                }, 0.0, used);
+// No Debugging has been done yet, but this is the C++ ver. 
+                  }, 0.0, used);
             }
             t += used;
             T = next;
