@@ -13,7 +13,7 @@ N2O = "NitrousOxide"
 
 #  GIVEN 
 D_o    = 6.00 * 0.0254          # m, tank OD (6 in)
-t_w    = 0.5 * 0.0254          # m, wall (0.25 in)
+t_w    = 0.5 * 0.0254          # m, wall (0.5 in)
 rho_Al, c_Al = 2700.0, 896.0    # Al 6061-T6: kg/m3, J/kg-K (MatWeb)
 T0, T_goal = 283.15, 288.0      # K, load and launch temperatures
 
