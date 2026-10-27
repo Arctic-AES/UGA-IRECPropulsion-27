@@ -1,6 +1,5 @@
 from math import pi, sqrt
 
-# INPUTS: edit only the values in this section.
 AREA_MODE = 'CAD'                 # CAD = measured STEP restrictions; FGSE = worksheet design orifices
 MODEL_FRACTION = 0.5              # Fraction of complete injector represented in Fluent
 CD_ETHANOL = 0.75                 # FGSE assumed discharge coefficient, not experimentally calibrated
@@ -79,4 +78,3 @@ if __name__ == '__main__':
     print(f'Outlet:   {r["outlet_half_kg_s"]:.6f} kg/s net | mean liquid-only speed {r["outlet_bulk_velocity_m_s"]:.3f} m/s')
     print(f'Mixture:  ethanol Y={r["ethanol_fraction"]:.4f} | N2O/ethanol={r["oxidizer_fuel_ratio"]:.3f}')
     print(f'Fluent:   inlet gauge reference={P_ETHANOL_PA-P_OPERATING_PA:.0f} Pa ethanol; {P_N2O_PA-P_OPERATING_PA:.0f} Pa N2O | outlet={P_NOZZLE_EXIT_PA-P_OPERATING_PA:.0f} Pa gauge')
-    print('Limit: liquid-orifice screening only; not validated for N2O flashing, injector losses, or nozzle gas dynamics.')
